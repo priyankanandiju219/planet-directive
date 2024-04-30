@@ -1,0 +1,44 @@
+.card-content{
+    position: absolute;
+    top : 150px;
+    right: 200px;
+    width: 700px;
+}
+.header{
+    // background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    font-size: 15px;
+    font-family :serif;
+}
+.field-header{
+    color: grey;
+    font-size: large;
+    font-family: serif;
+    display: block;
+    // position: absolute;
+}
+.input-box{
+    display: block; 
+    width: 250px;
+    height: 40px;
+    border: 1px solid rgb(166, 165, 165);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.button-header{
+    background-color:   #a4c0f4;
+    border: none;
+    color: #ffffff;
+    width: 36%;
+    border-radius: 10px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+button{
+    color:  #1b61e4;
+    text-align: center;
+    border: none;
+}

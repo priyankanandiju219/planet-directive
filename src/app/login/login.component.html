@@ -1,0 +1,56 @@
+<div class="card-content">
+    <div>
+        <img src="../../assets/download.png"/>
+      <h2 class="header">Hello there, Sign in to continue</h2>
+  
+      <div>
+        <form (ngSubmit)="onSubmit()">
+          <div>
+            <label class="field-header">Email</label>
+            <input class="input-box" type="email" name="email" [(ngModel)]="email" placeholder="Email" required>
+         <div>
+            </div>
+          </div>
+          <div>
+            <label class="field-header" matInput placeholder="Password" >Password</label>
+            <input type="text"  class="input-box"name="password"  placeholder="Password" [(ngModel)]="password" required             
+            [type]="password"
+            />
+
+            <button (click)="onClick()">
+              <i class="fa fa-eye" aria-hidden="true" *ngIf="!show"></i>
+              <i class="fa fa-eye-slash" aria-hidden="true" *ngIf="show"></i>
+            </button>
+            <div>
+              <!-- <label>
+                Password is required
+              </label> -->
+            </div>
+          </div>
+          <br>
+
+          <label>
+            <input type="checkbox" name="myCheckbox">
+            By Creating or logging into an account, you
+            <br>
+            are agreeing with our  <b>
+              Terms & Condition </b> 
+              <br>and <b>Privacy Policy</b> 
+          </label>
+          <br>
+          <br>
+          <div >
+            <button class="button-header">Next</button>
+            <!-- <button>Login</button> -->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+
+  
+  

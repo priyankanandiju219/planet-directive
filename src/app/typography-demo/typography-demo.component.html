@@ -1,0 +1,17 @@
+
+<p>Planet Details</p>
+<div *ngFor="let planet of planets" class="planet-card">
+    <h2>{{ planet.name }}</h2>
+    <p><strong>Climate:</strong> {{ planet.climate }}</p>
+    <p><strong>Population:</strong> {{ planet.population }}</p>
+    <p><strong>Terrain:</strong> {{ planet.terrain }}</p>
+  </div>
+
+  <mat-paginator [length]="totalItems"
+  [pageSize]="pageSize"
+  [pageSizeOptions]="pageSizeOptions"
+  (page)="onPageChange($event)"></mat-paginator>
+
+
+
+  
