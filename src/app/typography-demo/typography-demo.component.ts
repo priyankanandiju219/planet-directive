@@ -35,11 +35,10 @@ export class TypographyDemoComponent implements OnInit {
     console.log("pageNumber", pageNumber)
     this.planetDetailsService.getDataList(pageNumber, this.pageSize).subscribe((data: any[]) => {
       this.planets = data;
+      console.log("startIndex", this.planets)
       this.totalItems = this.planets.length;
       const mockedPlanets = [];
-
       const startIndex = (pageNumber - 1) * this.pageSize;
-      console.log("startIndex", startIndex)
       const endIndex = startIndex + this.pageSize;
       console.log(endIndex);
       for (let i = startIndex; i < endIndex; i++) {
